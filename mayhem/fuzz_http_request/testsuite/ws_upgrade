@@ -1,0 +1,8 @@
+GET /api/ws HTTP/1.1
+Host: localhost:9104
+Upgrade: websocket
+Connection: keep-alive, Upgrade
+Sec-WebSocket-Key: dGhlIHNhbXBsZSBub25jZQ==
+Sec-WebSocket-Version: 13
+Cookie: a=b; session=abc123; c=d
+

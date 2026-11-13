@@ -1,0 +1,14 @@
+Volume="Vol-0001"
+Volume="Vol-0002"
+MediaType="File"
+VolSessionId=3
+VolSessionTime=1700000001
+VolFile=1
+VolBlock=5-9
+FileIndex=1
+FileIndex=3-5
+FileIndex=8
+Count=5
+FileRegex=^/etc/.*
+Include
+Exclude

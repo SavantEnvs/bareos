@@ -1,0 +1,10 @@
+project: savantenvs/bareos
+target: fuzz_config_fd
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_config_fd/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/bin/fuzz_config_fd
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/fuzz_config_fd/fuzz_config_fd.dict
+    timeout: 10

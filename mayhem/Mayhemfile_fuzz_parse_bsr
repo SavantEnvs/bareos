@@ -1,0 +1,10 @@
+project: savantenvs/bareos
+target: fuzz_parse_bsr
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_parse_bsr/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/bin/fuzz_parse_bsr
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/fuzz_parse_bsr/fuzz_parse_bsr.dict
+    timeout: 10

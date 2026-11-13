@@ -1,0 +1,9 @@
+project: savantenvs/bareos
+target: fuzz_ws_codec
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_ws_codec/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/bin/fuzz_ws_codec
+    libfuzzer: true
+    timeout: 10

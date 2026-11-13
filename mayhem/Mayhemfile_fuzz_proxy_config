@@ -1,0 +1,10 @@
+project: savantenvs/bareos
+target: fuzz_proxy_config
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_proxy_config/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/bin/fuzz_proxy_config
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/fuzz_proxy_config/fuzz_proxy_config.dict
+    timeout: 10

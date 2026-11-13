@@ -1,0 +1,17 @@
+Volume="Vol-0001"
+MediaType="File"
+Device="FileStorage"
+VolSessionId=1
+VolSessionTime=1700000000
+VolFile=0-2
+VolBlock=0-1500
+VolAddr=0-65535
+FileIndex=1-10
+Count=10
+Slot=1
+Client="bareos-fd"
+Job="backup-bareos-fd.2025-01-01_10.00.00_01"
+JobId=1
+JobType=B
+JobLevel=F
+Stream=1

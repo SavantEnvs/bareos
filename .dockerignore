@@ -1,0 +1,14 @@
+# Full repo (incl. .git) goes into the commit image; only local build output stays out.
+build/
+out/
+mayhem/build/
+mayhem/build-tests/
+*.o
+*.a
+*.so
+*.dylib
+**/__pycache__/
+
+.DS_Store
+*.swp
+*~

@@ -1,0 +1,7 @@
+POST /login HTTP/1.1
+Host: localhost
+Content-Type: application/json
+Content-Length: 27
+
+{"user":"admin","pw":"x"}
+
